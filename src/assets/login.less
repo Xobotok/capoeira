@@ -1,0 +1,157 @@
+.login {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: @background;
+  .login-link {
+    padding-top: 20px;
+    display: inline-block;
+  }
+  .form-header {
+    font-size: 24px;
+    padding-bottom: 10px;
+    color: @main_text;
+    font-family: RobotoMedium, sans-serif;
+  }
+
+  .add-student-form {
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 600px;
+    max-height: 500px;
+    background-color: @background_workspace;
+    padding: 40px;
+  }
+
+  .radio-list {
+    display: flex;
+  }
+
+  .form-input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .input-belt {
+      width: 60px;
+      padding-left: 10px;
+      padding-right: 10px;
+      height: 30px;
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      border-radius: 6px;
+      border: 1px solid @elements;
+    }
+    .input-header {
+      color: @main_text;
+      text-align: left;
+      padding-bottom: 10px;
+      padding-top: 20px;
+      font-size: 18px;
+    }
+
+    .input-text {
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      font-size: 16px;
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      border-radius: 6px;
+      border: 1px solid @main_text;
+    }
+
+  }
+  .add-student {
+    padding-top: 20px;
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+    justify-content: space-between;
+
+    .add-button:hover {
+      background-color: @elements;
+      color: white;
+      box-shadow:1px 1px 8px 1px rgba(0,0,0,0.22);
+      -webkit-box-shadow:1px 1px 8px 1px rgba(0,0,0,0.22);
+      -moz-box-shadow:1px 1px 8px 1px rgba(0,0,0,0.22);
+    }
+    .login-link:hover {
+      background-color: @elements;
+      color: white;
+    }
+    .login-link {
+      -webkit-transition: all .3s;
+      -moz-transition: all .3s;
+      -ms-transition: all .3s;
+      -o-transition: all .3s;
+      transition: all .3s;
+      text-align: center;
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      border: 2px solid @elements;
+      color: @main_text;
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      border-radius: 6px;
+    }
+    .add-button.disabled:hover {
+      background-color: @elements;
+      color: white;
+      box-shadow: none;
+      -webkit-box-shadow:none;
+      -moz-box-shadow:none;
+      cursor: default;
+    }
+    .add-button {
+      border: none;
+      font-size: 18px;
+      padding-left: 40px;
+      padding-right: 40px;
+      -webkit-transition: all .3s;
+      -moz-transition: all .3s;
+      -ms-transition: all .3s;
+      -o-transition: all .3s;
+      transition: all .3s;
+      padding-top: 10px;
+      text-align: center;
+      padding-bottom: 10px;
+      background-color:  @elements;
+      color: white;
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+  }
+  .form-line {
+    display: flex;
+    .custom-radio:last-child {
+      padding-right: 0;
+    }
+    .custom-radio:first-child {
+      padding-left: 0;
+    }
+    .custom-radio {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+  .register-message {
+    text-align: center;
+    color: @elements;
+  }
+  .register-error {
+    text-align: center;
+    color: red;
+  }
+}
