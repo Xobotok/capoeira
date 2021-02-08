@@ -18,7 +18,7 @@
         <GroupStudentsList  v-if="activeTab == 0" :groups="groups"></GroupStudentsList>
     </div>
 </template>
-
+<script type="text/javascript" src="./weather-widget.js"></script>
 <style lang="less">
     @import '../assets/main.less';
     @import '../assets/home.less';
@@ -79,6 +79,7 @@
     },
     mounted(){
       helper.GET(constants.BACKEND_URL + '/group/take-user-groups', '', this.loadList)
+      console.log(this.$store)
     }
   };
 </script>

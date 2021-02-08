@@ -7,15 +7,15 @@
                 <div class="group-header" @click="deleteGroup(group)">Delete</div>
             </div>
             <div class="student-info">
-                <div class="student-header" style="width: 5%">№</div>
+                <div class="student-header w5prc">№</div>
                 <div class="student-header">ФИО</div>
                 <div class="student-header">Пояс</div>
                 <div class="student-header">Осталось занятий</div>
                 <div class="student-header">Последняя оплата</div>
-                <div class="student-header" style="width: 7%">Управление</div>
+                <div class="student-header w10prc settings-block">Управление</div>
             </div>
             <div class="student-info" v-for="(student,key) in group.students">
-                <div class="student-text" style="width: 5%">{{key + 1}}</div>
+                <div class="student-text w5prc">{{key + 1}}</div>
                 <div class="student-text">{{student.name}}</div>
                 <div class="student-text">{{student.belt}}</div>
                 <div class="student-text">{{student.paid_classes}}
@@ -30,7 +30,7 @@
                     </div>
                 </div>
                 <div class="student-text">{{student.last_paid}}</div>
-                <div class="student-text settings-block"  style="width: 7%">
+                <div class="student-text settings-block w10prc">
                     <div class="student_edit setting-icon" @click="editStudent(student)"></div>
                     <div class="student_delete setting-icon" @click="deleteStudent(student)"></div>
                 </div>
